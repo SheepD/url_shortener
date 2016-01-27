@@ -1,0 +1,35 @@
+=================
+Setup Guide
+=================
+
+I. Setup Guide
+
+1. If you do not have Ruby yet, Install RVM
+
+Run the following in a console:
+
+```
+$ \curl -sSL https://get.rvm.io | bash -s stable
+$ rvm @global do gem install bundler
+```
+
+
+2. Install PhantomJS or any JS Library like Nodejs if you dont have one yet
+
+Run `brew install phantomjs` if you haven't already.
+Run `sudo aptitude install nodejs` for Linux
+
+
+3. Install the gems
+
+Install the contents of `Gemfile` as follows:
+
+```
+$ bundle install
+```
+
+
+4. Start the server
+
+Run `$ rails s` in the console
+Then go to `localhost:3000` to view the app

@@ -1,0 +1,11 @@
+h1.text-center Simple Rails URL Shortener for Upwork Pro!
+
+= form_for @shortened_url do |f|
+  .form-group
+    = f.label :original_url, 'Original URL'
+    = f.text_field :original_url, placeholder: 'the url you want to shorten, like "https://www.google.com"', class: 'form-control'
+  .form-group
+    = f.label :slug, 'Slug'
+    = f.text_field :slug, placeholder: 'the shortened url will show up as "http://localhost:3000/your-slug-here" (optional)', class: 'form-control'
+  .form-group
+    = f.submit 'Shorten It', class: 'center-block btn btn-primary'
